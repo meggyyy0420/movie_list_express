@@ -1,7 +1,7 @@
 //使用 require 載入 Express
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 3001
 
 //使用 require 載入 Express-handlebars
 const exphbs = require('express-handlebars')
