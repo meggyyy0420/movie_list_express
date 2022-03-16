@@ -1,7 +1,7 @@
 //使用 require 載入 Express
 const express = require('express')
 const app = express()
-const port = 3001
+const PORT = process.env.PORT || 3001
 
 //使用 require 載入 Express-handlebars
 const exphbs = require('express-handlebars')
@@ -31,6 +31,6 @@ app.get('/search', (req, res) => {
   res.render('index', { movies: movies, keyword: keyword })
 })
 
-app.listen(port, () => {
-  console.log(`Express is listening on localhost:${port}`)
+app.listen(PORT, () => {
+  console.log(`Express is listening on localhost:${PORT}`)
 })
